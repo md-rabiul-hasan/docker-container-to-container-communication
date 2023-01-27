@@ -1,0 +1,13 @@
+version: '3'
+services:
+  server1:
+    container_name: node-container-1
+    build: 
+      dockerfile: Dockerfile
+    ports:
+      - 3333:3000
+
+networks: 
+  default: 
+      name: cpl-world
+      external: true
